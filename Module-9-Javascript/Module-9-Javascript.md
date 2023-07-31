@@ -186,7 +186,6 @@ JavaScript provides the parseInt() function to convert a string of any base to a
 Syntax:
 
 javascript
-Copy code
 parseInt(string, radix);
 string: The value to parse. If this argument is not a string, it is converted to one using the ToString method. Leading whitespace in this argument is ignored.
 radix: An integer between 2 and 36 that represents the radix (the base in mathematical numeral systems) of the string.

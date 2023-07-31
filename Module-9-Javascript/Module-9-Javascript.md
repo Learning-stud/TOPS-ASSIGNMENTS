@@ -24,7 +24,6 @@ Negative Infinity in JavaScript is a constant value that represents a value that
 Example:
 
 javascript
-Copy code
 let x = Number.NEGATIVE_INFINITY;
 console.log(x); // Output: -Infinity
 Negative infinity behaves differently from mathematical infinity in various arithmetic operations. For example, when divided by any other number, it results in -0, and when divided by itself or positive infinity, it returns NaN.
@@ -39,7 +38,6 @@ Undefined occurs when a variable has been declared but has not been assigned any
 ##Example of Undefined:
 
 javascript
-Copy code
 let a;
 console.log(a); // Console gives Error like 'a' is undefined.
 Undeclared:
@@ -48,7 +46,6 @@ Undeclared variables occur when we try to access any variable that is not initia
 Example of Undeclared:
 
 javascript
-Copy code
 console.log(a); // ReferenceError: a is not declared
 
 ## Q-6: Write the code for adding new elements dynamically?
@@ -57,7 +54,6 @@ JavaScript allows us to dynamically create new elements and add them to the DOM 
 Example:
 
 javascript
-Copy code
 // Create a new div element
 let newDiv = document.createElement("div");
 
@@ -82,7 +78,6 @@ The === operator is a strict e quality comparison operator in JavaScript. It com
 Example:
 
 javascript
-Copy code
 console.log(5 === "5"); // Output: false
 console.log(5 === 5);   // Output: true
 
@@ -95,10 +90,8 @@ We can directly access the style property of an HTML element and change its CSS 
 Example:
 
 html
-Copy code
 <button id="myButton">Click Me</button>
 javascript
-Copy code
 // Change the background color of the button when clicked
 document.getElementById("myButton").onclick = function() {
   this.style.backgroundColor = "red";
@@ -109,10 +102,8 @@ By changing the class attribute of an element, we can apply pre-defined CSS styl
 Example:
 
 html
-Copy code
 <div id="myDiv">This is a div element</div>
 javascript
-Copy code
 // Change the class of the div to apply different styles
 document.getElementById("myDiv").onclick = function() {
   this.className = "newStyle";
@@ -127,7 +118,6 @@ Add text or other content inside the .card-body element.
 Example:
 
 html
-Copy code
 <div class="card" style="width: 18rem;">
   <img src="profile-logo.jpg" alt="Profile Image">
   <div class="card-body">
@@ -144,7 +134,6 @@ After importing the File System module, you can use the writeFile() operation to
 Syntax:
 
 javascript
-Copy code
 writeFile(path, inputData, callBackFunction);
 path: The path of the file or the name of the file into which the input data is to be written.
 inputData: The data to be written in the file.
@@ -155,7 +144,6 @@ After importing the File System module, you can use the readFile() function to r
 Syntax:
 
 javascript
-Copy code
 readFile(path, format, callBackFunc);
 path: The path of the file from which the contents are to be read.
 format: The optional parameter representing the format of the text file (e.g., ASCII, utf-8).
@@ -170,7 +158,6 @@ A while loop is a control flow statement that allows code to be executed repeate
 Syntax:
 
 javascript
-Copy code
 while (condition) {
   // loop statements...
 }
@@ -180,7 +167,6 @@ The for loop provides a concise way of writing the loop structure. It consumes t
 Syntax:
 
 javascript
-Copy code
 for (initialization; condition; increment/decrement) {
   // statements...
 }
@@ -190,7 +176,6 @@ The do-while loop is similar to the while loop, but it checks for the condition 
 Syntax:
 
 javascript
-Copy code
 do {
   // Statements...
 } while (condition);
@@ -208,7 +193,6 @@ radix: An integer between 2 and 36 that represents the radix (the base in mathem
 Examples:
 
 javascript
-Copy code
 console.log(parseInt("100", 10));  // Output: 100
 console.log(parseInt("10", 8));    // Output: 8
 console.log(parseInt("101", 2));   // Output: 5
@@ -239,7 +223,6 @@ It is used when a warning message is needed to be displayed. The user needs to p
 Syntax:
 
 javascript
-Copy code
 alert("Your Alert here");
 Confirm Box:
 It is used to get authorization or permission from the user. The user has to press "OK" or "Cancel" to proceed.
@@ -247,7 +230,6 @@ It is used to get authorization or permission from the user. The user has to pre
 Syntax:
 
 javascript
-Copy code
 confirm("Confirm This...");
 Prompt Box:
 It is used to get user input for further use. The user can enter the re quired details and click "OK" to proceed or click "Cancel" to return a null value.
@@ -255,7 +237,6 @@ It is used to get user input for further use. The user can enter the re quired d
 Syntax:
 
 javascript
-Copy code
 prompt("Your Prompt here");
 
 ## Q-16: What is the use of Void (0)?
@@ -264,7 +245,6 @@ The void keyword in JavaScript is a unary operator that evaluates its operand an
 Example:
 
 html
-Copy code
 <a href="#" onclick="doSomething(); void 0;">Click me</a>
 In this example, doSomething() function is called, and then void 0 is used to create an expression that evaluates to undefined. The use of void prevents the browser from navigating to a new page when the link is clicked.
 
@@ -276,8 +256,7 @@ This property contains information about the current URL of the page, and you ca
 
 Example:
 
-javascript
-Copy code
+## javascript
 // Redirect the user to a new page immediately
 window.location.href = "https://www.example.com";
 Using window.location.assign() method:
@@ -286,7 +265,6 @@ The assign() method performs the same action as setting window.location.href.
 Example:
 
 javascript
-Copy code
 // Redirect the user to a new page after a specified amount of time
 setTimeout(function() {
   window.location.assign("https://www.example.com");
@@ -297,11 +275,9 @@ The replace() method also redirects the user to a new page, but it replaces the 
 Example:
 
 javascript
-Copy code
 // Replace the current page with a new page
 window.location.replace("https://www.example.com");
 These are the different ways to force a page to load another page in JavaScript.
 
 
-##
 

@@ -278,9 +278,9 @@ javascript
 window.location.replace("https://www.example.com");
 These are the different ways to force a page to load another page in JavaScript.
 
-##  Q:18 Disadvantages of using innerHTML in JavaScript
+Q:18 Disadvantages of using innerHTML in JavaScript
 
-## When working with JavaScript and manipulating the DOM, the innerHTML property is often used to dynamically update or create elements within an HTML document. While innerHTML can be convenient and easy to use, it also comes with several disadvantages that developers should be aware of:
+When working with JavaScript and manipulating the DOM, the innerHTML property is often used to dynamically update or create elements within an HTML document. While innerHTML can be convenient and easy to use, it also comes with several disadvantages that developers should be aware of:
 
 Security Vulnerabilities: One of the most significant drawbacks of using innerHTML is the potential for introducing security vulnerabilities, specifically related to Cross-Site Scripting (XSS). If the content assigned to innerHTML is not properly sanitized or validated, it could lead to the injection of malicious scripts into the page, posing a serious security risk.
 

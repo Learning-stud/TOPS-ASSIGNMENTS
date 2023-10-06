@@ -1,0 +1,76 @@
+{
+  "user": [],
+  "product": [
+    {
+      "id": 4,
+      "name": "Cold Coffee",
+      "type": "sweet",
+      "price": 500
+    },
+    {
+      "id": 5,
+      "name": "Americano",
+      "type": "sweet",
+      "price": 500
+    },
+    {
+      "id": 6,
+      "name": "Mocha",
+      "type": "sweet",
+      "price": 500
+    }
+  ],
+  "order": [
+    {
+      "id": 2,
+      "orderNo": "23451",
+      "username": "devanshu",
+      "coffeeType": "late",
+      "price": "300Rs"
+    },
+    {
+      "id": 3,
+      "orderNo": "23451",
+      "username": "teerth",
+      "coffeeType": "mocha",
+      "price": "1000Rs"
+    },
+    {
+      "id": 4,
+      "orderNo": "23451",
+      "username": "krutarth",
+      "coffeeType": "Hot Coffee",
+      "price": "3000Rs"
+    },
+    {
+      "id": 5,
+      "orderNo": "23451",
+      "username": "Rudra",
+      "coffeeType": "Cold  Coffee",
+      "price": "200Rs"
+    },
+    {
+      "id": 6,
+      "orderNo": "23451",
+      "username": "Tanmay",
+      "coffeeType": "Mocha",
+      "price": "1500Rs"
+    },
+    {
+      "id": 7,
+      "orderNo": "23452",
+      "username": "janmay",
+      "coffeeType": "Mocha",
+      "price": "1500Rs"
+    }
+  ],
+  "usertable": [
+    {
+      "name": "Mukesh Dalla",
+      "email": "mukesh@1234",
+      "phoneNo": "12132132",
+      "password": "12345",
+      "id": "1695718604667"
+    }
+  ]
+}

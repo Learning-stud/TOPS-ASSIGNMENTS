@@ -34,9 +34,11 @@ print(f"Fibonacci series{fibo(n)}")
 ''' 
 Q-4 => How Memory is managed in python
 Ans =>  Python uses automatic memory management . The core is managed by a private heap space ,
- and the interpreter takes care of memory allocation and deallocation.  
+and the interpreter takes care of memory allocation and deallocation.  
 
 Q-5 =>  What is the purpose continue statement in python?
- 
+The continue statement is used to skip the rest of the code
+inside a loop for the current iteration and move to the next iteration...
+
 '''
     

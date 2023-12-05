@@ -1,7 +1,7 @@
 # Q1 => WIRTE A PYTHON PROGRAM TO CHECK IF A NUMBER IS POSITIVE,NEGATIVE OR ZERO.
 
-print("Q1 => WIRTE A PYTHON PROGRAM TO CHECK IF A NUMBER IS POSITIVE,NEGATIVE OR ZERO.")
-print("<====================================================================>")
+print(" Q1 => WIRTE A PYTHON PROGRAM TO CHECK IF A NUMBER IS POSITIVE,NEGATIVE OR ZERO. ")
+print("      <====================================================================>")
 
 num  = float(input('  Q-1 Enter a number : '))
 if num > 0:
@@ -13,7 +13,7 @@ else:
 
 
 
-print("<====================================================================>")
+print("      <====================================================================>")
 
 '''
 <====================================================================>
@@ -22,7 +22,7 @@ print("<====================================================================>")
 
 
 print("Q2=> WRITE A PYTHON PROGRAM TO GET THE FACTORAL NUMBER OF GIVEN NUMBER : ")
-print("<====================================================================>")
+print("      <====================================================================>")
 
 def factrol(n):
     if n == 0 or n ==1:
@@ -34,7 +34,7 @@ num = int(input("Enter a Number"))
 print(f"   Factrol of {num}is {factrol(num)}")
 
 
-print("<====================================================================>")
+print("      <====================================================================>")
 
 '''
 <====================================================================>
@@ -46,7 +46,7 @@ print("<====================================================================>")
 
 print("Q3 => Write a Python program to get the Fibonacci series of given range : ")
 
-print("<====================================================================>")
+print("      <====================================================================>")
 
 def fibo(n):
     fib_series = [0,1]
@@ -57,14 +57,14 @@ def fibo(n):
 n = int(input("Enter The Range for Fibonacci Series"))
 print(f"Fibonacci series{fibo(n)}")
 
-print("<====================================================================> /n")
+print("      <====================================================================> ")
 
 
 '''
 <====================================================================>
 
 '''
-print("<====================================================================>")
+print("      <====================================================================>")
 
 '''
 
@@ -77,7 +77,7 @@ The continue statement is used to skip the rest of the code
 inside a loop for the current iteration and move to the next iteration...
 
 '''
-print("<====================================================================>")
+print("      <====================================================================>")
 
 '''
 <====================================================================>
@@ -87,7 +87,7 @@ print("<====================================================================>")
 
 print (" Q6  Write python program that swap two number with temp variable and without temp variable : ")
 
-print("<====================================================================>")
+print("      <====================================================================>")
 # with temp variable
 
 a= 5
@@ -100,7 +100,7 @@ a =5
 b=10
 a,b = b,a
 
-print("<====================================================================>")
+print("      <====================================================================>")
 
 '''
 <====================================================================>
@@ -127,4 +127,56 @@ if letter in ['a', 'e','i','o','u']:
 else:
     print("Not A Vowels")
 
+print("      <====================================================================>")
 
+# Q8   Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
+
+print(" Q-8 Write a Python program to sum of three given integers. However, if two values are equal sum will be zero. ")
+print("      <====================================================================>")
+
+a= int(input("Enter First NUmber"))
+b= int(input("Enter Second NUmber"))
+c= int(input("Enter Third NUmber"))
+
+if a == b or b == c or a == c:
+    print("Sum is 0")
+else:
+    print("Sum is", a + b + c)
+
+print("      <====================================================================>")
+
+
+# Q9  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
+
+print("Q-9  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5. ")
+print("      <====================================================================>")
+
+def check_condition:
+    return a == b or abs(a -b) == 5 or a + b ==5
+
+num1 = int(input("Enter First NUmber: "))
+num2 = int(input("Enter Second NUmber: "))
+
+print(check_condition(num1,num2))
+
+# Q-10  Write a python program to sum of the first n positive integers.
+
+print("Q-10 =>  Write a python program to sum of the first n positive integers. ")
+
+print("      <====================================================================>")
+
+n = int(input("Enter a Positive Integer: => : "))
+
+sum_of_integer = n * (n + 1 ) // 2
+
+print(f"Sum of The First {n} Positive integer is {sum_of_integer}")
+
+# Q-11  Write a Python program to calculate the length of a string.
+
+print("Q-11 =>  Write a Python program to calculate the length of a string. ")
+
+print("      <====================================================================>")
+
+string = input("Enter a string: ")
+length = len(string)
+print(f"Length of the string is {length}")

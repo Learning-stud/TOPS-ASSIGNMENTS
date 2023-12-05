@@ -236,12 +236,13 @@ print(f"Substring {sub_string} occurs {count} times In The Main String")
 
 # Q-16 => Write a Python program to count the occurrences of each word in a given sentence
 
-print("Q-16 => Write a Python program to count the occurrences of each word in a given sentence ")
 
 '''
 The word frequency effect is a psychological phenomenon where recognition times are faster for words seen more frequently than for words seen less frequently. Word frequency depends on individual awareness of the tested language.
 
 '''
+print("Q-16 => Write a Python program to count the occurrences of each word in a given sentence ")
+
 print("      <====================================================================>")
 
 sentence = input("Enter Sentence")
@@ -252,5 +253,80 @@ for word in words:
     word_frequency[word]= word_frequency.get(word,0) + 1
 
 print("Word Frequency",word_frequency)
+
+print("      <====================================================================>")
+
+
+# Q-17 =>  Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string.
+
+print("Q-17  Write a Python program to get a single string from two given strings, separated by a space and swap the first two characters of each string : => : ")
+
+print("      <====================================================================>")
+
+str1 = input( " Enter The First String : => :  ")
+str2 = input( " Enter The Second String : => :  ")
+
+new_string = str2[:2] + str1[2:] + " " + str1[:2] + str2[2:]
+
+print(" Result: => : ",new_string)
+
+print("      <====================================================================>")
+
+
+# Q-18 =>  Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead if the string length of the given string is less than 3, leave it unchanged.
+
+print ("Q-18 =>  Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead if the string length of the given string is less than 3, leave it unchanged.")
+
+print("      <====================================================================>")
+given_string = input("Enter a String")
+
+if len(given_string) >= 3:
+    if given_string[-3]  == 'ing':
+        given_string += 'ly'
+
+    else:
+        given_string += 'ing'
+
+print("Result: => : ",given_string)
+
+
+print("      <====================================================================>")
+
+# Q-19 =>  Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' follows the 'poor',replace the whole 'not'...'poor' substring with 'good'. Return the resulting string.
+
+
+print("Q-19 =>  Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if 'not' follows the 'poor',replace the whole 'not'...'poor' substring with 'good'. Return the resulting string: => : ")
+
+
+print("      <====================================================================>")
+
+input_string = input("Enter a String; => : ")
+
+not_index=input_string.find('not')
+poor_index=input_string.find('poor')
+
+if not_index != -1 and poor_index != -1 and not_index < poor_index:
+    result_string = input_string[:not_index] + ' good' + input_string[poor_index + 4]
+    else:
+        result_string= input_string
+
+print("Result : => : ",result_string)
+
+
+print("      <====================================================================>")
+
+# Q-20 =>  Write a Python function that takes a list of words and returns the length of the longest one.
+
+
+print("Q-20 =>  Write a Python function that takes a list of words and returns the length of the longest one: => :  ")
+
+print("      <====================================================================>")
+
+def long_word_length(word_list):
+    return max(len(word) for word in word_list)
+
+word = input("Enter a List of Word : => : ").split(',')
+print("Length Of The Longest Word: => : ",long_word_length(word))
+
 
 print("      <====================================================================>")

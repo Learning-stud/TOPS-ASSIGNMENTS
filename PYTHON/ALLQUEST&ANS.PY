@@ -211,6 +211,8 @@ for char in string:
 print("Character Frequency", char_freq)
 
 
+print("      <====================================================================>")
+
 # Q-14 What are negative indexes and why are they used?
 
 '''
@@ -230,3 +232,25 @@ count = main_string.count(sub_string)
 print("      <====================================================================>")
 
 print(f"Substring {sub_string} occurs {count} times In The Main String")
+
+
+# Q-16 => Write a Python program to count the occurrences of each word in a given sentence
+
+print("Q-16 => Write a Python program to count the occurrences of each word in a given sentence ")
+
+'''
+The word frequency effect is a psychological phenomenon where recognition times are faster for words seen more frequently than for words seen less frequently. Word frequency depends on individual awareness of the tested language.
+
+'''
+print("      <====================================================================>")
+
+sentence = input("Enter Sentence")
+words = sentence.split()
+
+word_frequency = {}
+for word in words:
+    word_frequency[word]= word_frequency.get(word,0) + 1
+
+print("Word Frequency",word_frequency)
+
+print("      <====================================================================>")

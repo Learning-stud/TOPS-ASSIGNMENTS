@@ -129,6 +129,7 @@ else:
 
 print("      <====================================================================>")
 
+
 # Q8   Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
 
 print(" Q-8 Write a Python program to sum of three given integers. However, if two values are equal sum will be zero. ")
@@ -145,13 +146,26 @@ else:
 
 print("      <====================================================================>")
 
+# Q9 => Q-9 Write a Python program to sum of three given integers. However, if two values are equal sum will be zero
 
-# Q9  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
+print(" Q-9   Write a Python program to sum of three given integers. However, if two values are equal sum will be zero ")
 
-print("Q-9  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5. ")
+
+letter = input (" Enter a letter:  ").lower()
+if letter in ['a', 'e','i','o','u']:
+    print('Vowels')
+else:
+    print("Not A Vowels")
+
 print("      <====================================================================>")
 
-def check_condition:
+
+# Q-10  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5.
+
+print("Q-10  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5. ")
+print("      <====================================================================>")
+
+def check_condition(a,b):
     return a == b or abs(a -b) == 5 or a + b ==5
 
 num1 = int(input("Enter First NUmber: "))
@@ -159,9 +173,9 @@ num2 = int(input("Enter Second NUmber: "))
 
 print(check_condition(num1,num2))
 
-# Q-10  Write a python program to sum of the first n positive integers.
+# Q-11 Write a python program to sum of the first n positive integers.
 
-print("Q-10 =>  Write a python program to sum of the first n positive integers. ")
+print("Q-11 =>  Write a python program to sum of the first n positive integers. ")
 
 print("      <====================================================================>")
 
@@ -171,12 +185,48 @@ sum_of_integer = n * (n + 1 ) // 2
 
 print(f"Sum of The First {n} Positive integer is {sum_of_integer}")
 
-# Q-11  Write a Python program to calculate the length of a string.
+# Q-12  Write a Python program to calculate the length of a string.
 
-print("Q-11 =>  Write a Python program to calculate the length of a string. ")
+print("Q-12 =>  Write a Python program to calculate the length of a string. ")
 
 print("      <====================================================================>")
 
 string = input("Enter a string: ")
 length = len(string)
 print(f"Length of the string is {length}")
+
+
+# Q-13  Write a Python program to count the number of characters (character frequency) in a string
+
+
+print (" Q-13 Write a Python program to count the number of characters (character frequency) in a string  ")
+
+print("      <====================================================================>")
+
+string = input (" Enter A String")
+char_freq = {}
+for char in string:
+    char_freq[char]= char_freq.get(char,0) + 1
+
+print("Character Frequency", char_freq)
+
+
+# Q-14 What are negative indexes and why are they used?
+
+'''
+Negative indexes in Python are used to access elements from the end of a sequence (list, tuple, string). `-1` represents the last element, -2 the second-to-last, and so on.
+'''
+
+# Q-15  Write a Python program to count occurrences of a substring in a string.
+
+print(" Q-15 Write a Python program to count occurrences of a substring in a string.")
+
+print("      <====================================================================>")
+
+main_string = input("Enyter The Main String: => :")
+sub_string = input("Enyter The SubString: => :")
+count = main_string.count(sub_string)
+
+print("      <====================================================================>")
+
+print(f"Substring {sub_string} occurs {count} times In The Main String")

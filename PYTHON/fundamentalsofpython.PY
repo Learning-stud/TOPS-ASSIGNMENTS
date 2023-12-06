@@ -119,6 +119,8 @@ print("      <==================================================================
 
 print("Q-7 Write a Python program to find whether a given number is even or odd, print out an appropriate message to the user: ")
 
+# The above code is taking an input from the user and checking if the number is even or odd. If the number is divisible by 2 without any remainder, it is considered an even number and the code will print "Even Number". Otherwise, it is considered an odd number and the code will print "Odd Number".
+
 num = int(input( " Enter a Number : "))
 if num % 2==0:
     print(" Even Number")
@@ -129,6 +131,8 @@ else:
 
 print(" Q-7  Write a Python program to test whether a passed letter is a vowel or not : => :   ")
 
+
+# The above code is asking the user to enter a letter and then checks if the entered letter is a vowel (a, e, i, o, u). If the letter is a vowel, it prints "Vowels". Otherwise, it prints "Not A Vowels".
 
 letter = input (" Enter a letter:  ").lower()
 if letter in ['a', 'e','i','o','u']:
@@ -143,6 +147,9 @@ print("      <==================================================================
 
 print(" Q-8 Write a Python program to sum of three given integers. However, if two values are equal sum will be zero. ")
 print("      <====================================================================>")
+
+# The above code prompts the user to enter three numbers. It then checks if any two of the numbers are equal. If any two numbers are equal, it prints "Sum is 0". Otherwise, it calculates the sum of the three numbers and prints "Sum is" followed by the sum.
+
 
 a= int(input("Enter First NUmber"))
 b= int(input("Enter Second NUmber"))
@@ -160,6 +167,8 @@ print("      <==================================================================
 print(" Q-9   Write a Python program to sum of three given integers. However, if two values are equal sum will be zero ")
 
 
+# The above code is asking the user to enter a letter and then checks if the entered letter is a vowel (a, e, i, o, u). If the letter is a vowel, it prints "Vowels". Otherwise, it prints "Not A Vowels".
+
 letter = input (" Enter a letter:  ").lower()
 if letter in ['a', 'e','i','o','u']:
     print('Vowels')
@@ -173,6 +182,11 @@ print("      <==================================================================
 
 print("Q-10  Write a Python program that will return true if the two given integer values are equal or their sum or difference is 5. ")
 print("      <====================================================================>")
+
+# The above code defines a function called "check_condition" that takes two parameters, "a" and "b". The function checks three conditions:
+# 1. If "a" is equal to "b"
+# 2. If the absolute difference between "a" and "b" is equal to 5
+# 3. If the sum of "a" and "b" is equal to 5
 
 def check_condition(a,b):
     return a == b or abs(a -b) == 5 or a + b ==5
@@ -188,6 +202,8 @@ print("Q-11 =>  Write a python program to sum of the first n positive integers. 
 
 print("      <====================================================================>")
 
+# The above code is calculating the sum of the first n positive integers. It prompts the user to enter a positive integer, then calculates the sum using the formula n * (n + 1) // 2. Finally, it prints the sum of the first n positive integers.
+
 n = int(input("Enter a Positive Integer: => : "))
 
 sum_of_integer = n * (n + 1 ) // 2
@@ -200,6 +216,8 @@ print("Q-12 =>  Write a Python program to calculate the length of a string. "
 
 print("      <====================================================================>")
 
+# The above code prompts the user to enter a string, then calculates the length of the string using the len() function. Finally, it prints the length of the string.
+
 string = input("Enter a string: ")
 length = len(string)
 print(f"Length of the string is {length}")
@@ -211,6 +229,8 @@ print(f"Length of the string is {length}")
 print (" Q-13 Write a Python program to count the number of characters (character frequency) in a string  ")
 
 print("      <====================================================================>")
+
+# The above code is calculating the frequency of each character in a given string. It prompts the user to enter a string, and then it iterates through each character in the string. For each character, it checks if it already exists in the char_freq dictionary. If it does, it increments the frequency count by 1. If it doesn't, it adds the character to the dictionary with a frequency count of 1. Finally, it prints the character frequency dictionary.
 
 string = input (" Enter A String")
 char_freq = {}
@@ -234,6 +254,8 @@ print(" Q-15 Write a Python program to count occurrences of a substring in a str
 
 print("      <====================================================================>")
 
+# The above code is asking the user to input a main string and a sub string. It then counts the number of occurrences of the sub string within the main string and stores the count in the variable "count".
+
 main_string = input("Enyter The Main String: => :")
 sub_string = input("Enyter The SubString: => :")
 count = main_string.count(sub_string)
@@ -254,6 +276,8 @@ print("Q-16 => Write a Python program to count the occurrences of each word in a
 
 print("      <====================================================================>")
 
+# The above code is taking a sentence as input from the user and then splitting the sentence into individual words. It then creates a dictionary called "word_frequency" to store the frequency of each word in the sentence. The code iterates through each word in the sentence and updates the frequency count in the dictionary. Finally, it prints the word frequency dictionary.
+
 sentence = input("Enter Sentence")
 words = sentence.split()
 
@@ -272,6 +296,8 @@ print("Q-17  Write a Python program to get a single string from two given string
 
 print("      <====================================================================>")
 
+# The above code takes two strings as input from the user and then creates a new string by combining parts of the two input strings. It takes the first two characters from the second string and combines it with the remaining characters from the first string. It also takes the first two characters from the first string and combines it with the remaining characters from the second string. The new string is then printed as the result.
+
 str1 = input( " Enter The First String : => :  ")
 str2 = input( " Enter The Second String : => :  ")
 
@@ -287,6 +313,8 @@ print("      <==================================================================
 print ("Q-18 =>  Write a Python program to add 'ing' at the end of a given string (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead if the string length of the given string is less than 3, leave it unchanged.")
 
 print("      <====================================================================>")
+# The above code takes a string as input from the user and checks if the length of the string is greater than or equal to 3. If it is, it checks if the last three characters of the string are 'ing'. If they are, it appends 'ly' to the string. If they are not, it appends 'ing' to the string. Finally, it prints the resulting string.
+
 given_string = input("Enter a String")
 
 if len(given_string) >= 3:

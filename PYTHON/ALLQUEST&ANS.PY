@@ -307,8 +307,8 @@ poor_index=input_string.find('poor')
 
 if not_index != -1 and poor_index != -1 and not_index < poor_index:
     result_string = input_string[:not_index] + ' good' + input_string[poor_index + 4]
-    else:
-        result_string= input_string
+else:
+    result_string= input_string
 
 print("Result : => : ",result_string)
 
@@ -330,3 +330,51 @@ print("Length Of The Longest Word: => : ",long_word_length(word))
 
 
 print("      <====================================================================>")
+
+
+# Q-21 =>  Write a Python function to reverses a string if its length is a multiple of 4.
+
+print(" Q-21 =>   Write a Python function to reverses a string if its length is a multiple of 4 : => :")
+
+print("      <====================================================================>")
+
+# The above code defines a function called `reverse_string_multiply_of_4` that takes an input string as a parameter. It checks if the length of the input string is divisible by 4. If it is, it returns the reverse of the input string using slicing. If it is not divisible by 4, it returns the input string as is.
+
+def reverse_string_multiply_of_4(input_string):
+    if len(input_string) % 4 == 0:
+        return input_string[:: -1]
+    else:
+        return input_string
+
+string_to_reverse= input("Enter A String : => : ")
+print("Result : => : ", reverse_string_multiply_of_4(string_to_reverse) )
+
+print("      <====================================================================>")
+
+
+# Q-22 =>  Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2, return instead of the empty string.
+
+
+print(" Q-22 : => :  Write a Python program to get a string made of the first 2 and the last 2 chars from a given a string. If the string length is less than 2,return instead of the empty string. ")
+
+print("      <====================================================================>")
+
+# The above code prompts the user to enter a string. If the length of the string is less than 2, it assigns the value "String is Empty" to the variable `string_result`. Otherwise, it takes the first two characters of the string (`strings[:2]`) and concatenates them with the last two characters of the string (`strings[-2:]`). The resulting string is then assigned to the variable `string_result`. Finally, it prints the value of `string_result`.
+
+strings = input(" Enter a String : => : ")
+
+if len(strings) < 2:
+    string_result =  ("String is Empty")
+else:
+    string_result = strings[:2] + strings[-2:]
+
+print("Result : => : ",string_result)
+
+print("      <====================================================================>")
+
+
+# Q-23 => Write a Python function to insert a string in the middle of a string.
+
+print("Q-23 => Write a Python function to insert a string in the middle of a string : => : ")
+
+

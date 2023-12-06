@@ -337,6 +337,8 @@ print("Q-19 =>  Write a Python program to find the first appearance of the subst
 
 print("      <====================================================================>")
 
+# The above code takes a string as input from the user. It then checks if the string contains the word 'not' followed by the word 'poor'. If this condition is met, it replaces the substring 'not' to 'good' and removes the substring 'poor' from the original string. Finally, it prints the modified string or the original string if the condition is not met.
+
 input_string = input("Enter a String; => : ")
 
 not_index=input_string.find('not')
@@ -359,6 +361,8 @@ print("Q-20 =>  Write a Python function that takes a list of words and returns t
 
 print("      <====================================================================>")
 
+# The above code defines a function called `long_word_length` that takes a list of words as input. It then uses a generator expression to find the length of each word in the list and returns the maximum length.
+
 def long_word_length(word_list):
     return max(len(word) for word in word_list)
 
@@ -376,6 +380,9 @@ print(" Q-21 =>   Write a Python function to reverses a string if its length is 
 print("      <====================================================================>")
 
 # The above code defines a function called `reverse_string_multiply_of_4` that takes an input string as a parameter. It checks if the length of the input string is divisible by 4. If it is, it returns the reverse of the input string using slicing. If it is not divisible by 4, it returns the input string as is.
+
+# The above code defines a function called `reverse_string_multiply_of_4` that takes an input string as a parameter. It checks if the length of the input string is divisible by 4. If it is, it returns the reverse of the input string using slicing. If it is not divisible by 4, it returns the input string as is.
+
 
 def reverse_string_multiply_of_4(input_string):
     if len(input_string) % 4 == 0:
@@ -398,6 +405,8 @@ print("      <==================================================================
 
 # The above code prompts the user to enter a string. If the length of the string is less than 2, it assigns the value "String is Empty" to the variable `string_result`. Otherwise, it takes the first two characters of the string (`strings[:2]`) and concatenates them with the last two characters of the string (`strings[-2:]`). The resulting string is then assigned to the variable `string_result`. Finally, it prints the value of `string_result`.
 
+# The above code prompts the user to enter a string. If the length of the string is less than 2, it assigns the value "String is Empty" to the variable `string_result`. Otherwise, it takes the first two characters of the string (`strings[:2]`) and concatenates them with the last two characters of the string (`strings[-2:]`). The resulting string is then assigned to the variable `string_result`. Finally, it prints the value of `string_result`.
+
 strings = input(" Enter a String : => : ")
 
 if len(strings) < 2:
@@ -415,6 +424,8 @@ print("      <==================================================================
 print("Q-23 => Write a Python function to insert a string in the middle of a string : => : ")
 
 print("      <====================================================================>")
+
+# The above code defines a function called `string_in_middle` that takes two parameters: `main_string` and `inserted_string`.
 
 def string_in_middle(main_string,inserted_string):
     middle_index = len(main_string) // 2

@@ -3,6 +3,8 @@
 print(" Q1 => WIRTE A PYTHON PROGRAM TO CHECK IF A NUMBER IS POSITIVE,NEGATIVE OR ZERO. ")
 print("      <====================================================================>")
 
+# The above code is taking user input for a number and then checking if the number is positive, zero, or negative. It then prints the corresponding message based on the condition.
+
 num  = float(input('  Q-1 Enter a number : '))
 if num > 0:
     print("Number positive")
@@ -23,6 +25,8 @@ print("      <==================================================================
 
 print("Q2=> WRITE A PYTHON PROGRAM TO GET THE FACTORAL NUMBER OF GIVEN NUMBER : ")
 print("      <====================================================================>")
+
+# The above code is calculating the factorial of a given number. It defines a function called "factrol" that takes an integer parameter "n". If the value of "n" is 0 or 1, the function returns 1. Otherwise, it recursively calls itself with the parameter "n-1" and multiplies the result with "n".
 
 def factrol(n):
     if n == 0 or n ==1:
@@ -48,6 +52,8 @@ print("Q3 => Write a Python program to get the Fibonacci series of given range :
 
 print("      <====================================================================>")
 
+# The above code is generating a Fibonacci series up to a given range. It takes an input from the user for the range of the Fibonacci series and then uses a while loop to generate the series. The series is stored in a list called "fib_series" and starts with the values 0 and 1. The loop continues until the length of the series is less than the given range. In each iteration, the next number in the series is calculated by adding the last two numbers in the series. Finally, the generated Fibonacci series is printed.
+
 def fibo(n):
     fib_series = [0,1]
     while len(fib_series) <n :
@@ -72,8 +78,9 @@ Q-4 => How Memory is managed in python
 Ans =>  Python uses automatic memory management . The core is managed by a private heap space ,
 and the interpreter takes care of memory allocation and deallocation.
 
-Q-5 =>  What is the purpose continue statement in python?
-The continue statement is used to skip the rest of the code
+Q-5 => What is the purpose continue statement in python?
+
+ANS => The continue statement is used to skip the rest of the code
 inside a loop for the current iteration and move to the next iteration...
 
 '''
@@ -89,6 +96,8 @@ print (" Q6  Write python program that swap two number with temp variable and wi
 
 print("      <====================================================================>")
 # with temp variable
+
+# The above code is swapping the values of variables a and b. It is using a temporary variable "temp" to store the value of a before swapping. Then, it assigns the value of b to a and the value of temp (which is the original value of a) to b.
 
 a= 5
 b= 10

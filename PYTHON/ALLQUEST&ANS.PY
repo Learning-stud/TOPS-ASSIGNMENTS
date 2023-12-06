@@ -377,4 +377,18 @@ print("      <==================================================================
 
 print("Q-23 => Write a Python function to insert a string in the middle of a string : => : ")
 
+print("      <====================================================================>")
+
+def string_in_middle(main_string,inserted_string):
+    middle_index = len(main_string) // 2
+    return main_string[:middle_index] + inserted_string + main_string[middle_index]
+
+
+main_string = input("Enter the Main String : => : ")
+inserted_string = input("Enter The String To Insert: => : ")
+
+print("Result : => : ", string_in_middle(main_string,inserted_string))
+
+
+print("      <====================================================================>")
 

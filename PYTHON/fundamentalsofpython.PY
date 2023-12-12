@@ -5,13 +5,10 @@ print("      <==================================================================
 
 # The above code is taking user input for a number and then checking if the number is positive, zero, or negative. It then prints the corresponding message based on the condition.
 
-num  = float(input('  Q-1 Enter a number : '))
-if num > 0:
-    print("Number positive")
-elif num == 0:
-    print("Zero")
-else:
-    print("Negative Number")
+num = float(input('Enter a number: '))
+result = "Positive" if num > 0 else "Zero" if num == 0 else "Negative"
+print(result)
+
 
 
 
@@ -28,14 +25,12 @@ print("      <==================================================================
 
 # The above code is calculating the factorial of a given number. It defines a function called "factrol" that takes an integer parameter "n". If the value of "n" is 0 or 1, the function returns 1. Otherwise, it recursively calls itself with the parameter "n-1" and multiplies the result with "n".
 
-def factrol(n):
-    if n == 0 or n ==1:
-        return 1
-    else :
-        return n *factrol(n-1)
+def factorial(n):
+    return 1 if n == 0 or n == 1 else n * factorial(n - 1)
 
-num = int(input("Enter a Number"))
-print(f"   Factrol of {num}is {factrol(num)}")
+num = int(input("Enter a number: "))
+print(f"The factorial of {num} is {factorial(num)}")
+
 
 
 print("      <====================================================================>")
@@ -54,14 +49,15 @@ print("      <==================================================================
 
 # The above code is generating a Fibonacci series up to a given range. It takes an input from the user for the range of the Fibonacci series and then uses a while loop to generate the series. The series is stored in a list called "fib_series" and starts with the values 0 and 1. The loop continues until the length of the series is less than the given range. In each iteration, the next number in the series is calculated by adding the last two numbers in the series. Finally, the generated Fibonacci series is printed.
 
-def fibo(n):
-    fib_series = [0,1]
-    while len(fib_series) <n :
-        fib_series.append(fib_series[-1]+fib_series[-2])
+def fibonacci(n):
+    fib_series = [0, 1]
+    while len(fib_series) < n:
+        fib_series.append(fib_series[-1] + fib_series[-2])
     return fib_series
 
-n = int(input("Enter The Range for Fibonacci Series"))
-print(f"Fibonacci series{fibo(n)}")
+range_limit = int(input("Enter the range for Fibonacci series: "))
+print(f"Fibonacci series: {fibonacci(range_limit)}")
+
 
 print("      <====================================================================> ")
 
@@ -121,11 +117,10 @@ print("Q-7 Write a Python program to find whether a given number is even or odd,
 
 # The above code is taking an input from the user and checking if the number is even or odd. If the number is divisible by 2 without any remainder, it is considered an even number and the code will print "Even Number". Otherwise, it is considered an odd number and the code will print "Odd Number".
 
-num = int(input( " Enter a Number : "))
-if num % 2==0:
-    print(" Even Number")
-else:
-    print(" Odd Number")
+num = int(input("Enter a number: "))
+result = "Even" if num % 2 == 0 else "Odd"
+print(result)
+
 
 # Q-7  Write a Python program to test whether a passed letter is a vowel or not.
 
@@ -134,11 +129,10 @@ print(" Q-7  Write a Python program to test whether a passed letter is a vowel o
 
 # The above code is asking the user to enter a letter and then checks if the entered letter is a vowel (a, e, i, o, u). If the letter is a vowel, it prints "Vowels". Otherwise, it prints "Not A Vowels".
 
-letter = input (" Enter a letter:  ").lower()
-if letter in ['a', 'e','i','o','u']:
-    print('Vowels')
-else:
-    print("Not A Vowels")
+letter = input("Enter a letter: ").lower()
+result = "Vowel" if letter in ['a', 'e', 'i', 'o', 'u'] else "Not a Vowel"
+print(result)
+
 
 print("      <====================================================================>")
 
@@ -166,14 +160,19 @@ print("      <==================================================================
 
 print(" Q-9   Write a Python program to sum of three given integers. However, if two values are equal sum will be zero ")
 
+def sum_of_three_integers(a, b, c):
+    if a == b or b == c or a == c:
+        return 0
+    else:
+        return a + b + c
 
-# The above code is asking the user to enter a letter and then checks if the entered letter is a vowel (a, e, i, o, u). If the letter is a vowel, it prints "Vowels". Otherwise, it prints "Not A Vowels".
+num1, num2, num3 = 3, 3, 6
+result = sum_of_three_integers(num1, num2, num3)
+print(f"The sum of three integers is: {result}")
 
-letter = input (" Enter a letter:  ").lower()
-if letter in ['a', 'e','i','o','u']:
-    print('Vowels')
-else:
-    print("Not A Vowels")
+
+
+
 
 print("      <====================================================================>")
 
@@ -189,12 +188,9 @@ print("      <==================================================================
 # 3. If the sum of "a" and "b" is equal to 5
 
 def check_condition(a,b):
-    return a == b or abs(a -b) == 5 or a + b ==5
-
-num1 = int(input("Enter First NUmber: "))
-num2 = int(input("Enter Second NUmber: "))
-
-print(check_condition(num1,num2))
+    return a == b or abs(a - b) == 5 or  a + b == 5
+    num1,num2 = 3,2
+    print(check_condition(num1,num2))
 
 # Q-11 Write a python program to sum of the first n positive integers.
 
@@ -204,11 +200,10 @@ print("      <==================================================================
 
 # The above code is calculating the sum of the first n positive integers. It prompts the user to enter a positive integer, then calculates the sum using the formula n * (n + 1) // 2. Finally, it prints the sum of the first n positive integers.
 
-n = int(input("Enter a Positive Integer: => : "))
+n = 5
+sum_of_integer = n * (n + 1) // 2
+print(f"Sum of the first {n} positive integers is {sum_of_integer}")
 
-sum_of_integer = n * (n + 1 ) // 2
-
-print(f"Sum of The First {n} Positive integer is {sum_of_integer}")
 
 # Q-12  Write a Python program to calculate the length of a string.
 
@@ -217,10 +212,10 @@ print("Q-12 =>  Write a Python program to calculate the length of a string. "
 print("      <====================================================================>")
 
 # The above code prompts the user to enter a string, then calculates the length of the string using the len() function. Finally, it prints the length of the string.
-
-string = input("Enter a string: ")
-length = len(string)
+user_string = "Hello, World!"
+length = len(user_string)
 print(f"Length of the string is {length}")
+
 
 
 # Q-13  Write a Python program to count the number of characters (character frequency) in a string
@@ -232,12 +227,10 @@ print("      <==================================================================
 
 # The above code is calculating the frequency of each character in a given string. It prompts the user to enter a string, and then it iterates through each character in the string. For each character, it checks if it already exists in the char_freq dictionary. If it does, it increments the frequency count by 1. If it doesn't, it adds the character to the dictionary with a frequency count of 1. Finally, it prints the character frequency dictionary.
 
-string = input (" Enter A String")
-char_freq = {}
-for char in string:
-    char_freq[char]= char_freq.get(char,0) + 1
+user_string = "programming"
+char_frequency = {char: user_string.count(char) for char in set(user_string)}
+print("Character frequency:", char_frequency)
 
-print("Character Frequency", char_freq)
 
 
 print("      <====================================================================>")
@@ -246,6 +239,11 @@ print("      <==================================================================
 
 '''
 Negative indexes in Python are used to access elements from the end of a sequence (list, tuple, string). `-1` represents the last element, -2 the second-to-last, and so on.
+
+my_list = [1, 2, 3, 4, 5]
+last_element = my_list[-1]  # Access the last element
+second_last_element = my_list[-2]  # Access the second-to-last element
+
 '''
 
 # Q-15  Write a Python program to count occurrences of a substring in a string.
@@ -256,9 +254,11 @@ print("      <==================================================================
 
 # The above code is asking the user to input a main string and a sub string. It then counts the number of occurrences of the sub string within the main string and stores the count in the variable "count".
 
-main_string = input("Enyter The Main String: => :")
-sub_string = input("Enyter The SubString: => :")
-count = main_string.count(sub_string)
+main_str = "Hello, hello, hello, how low?"
+sub_str = "hello"
+occurrences = main_str.lower().count(sub_str.lower())
+print(f"The substring '{sub_str}' appears {occurrences} times in the main string.")
+
 
 print("      <====================================================================>")
 

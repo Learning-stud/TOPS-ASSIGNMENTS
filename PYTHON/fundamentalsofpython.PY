@@ -345,6 +345,11 @@ def replace_substring(main_str):   # defining a function
     not_index = main_str.find("not")
     poor_index = main_str.find("poor")
 
+
+
+
+# aa line check kare 6e k "not" ane "poor" bannev string main_string ma 6e ane "not" "poor" ni pehla aave 6e.agar aa condition satisfy thai,to main_str string ma "not" thi pehla no hisso , "good" ame "poor" na pachina hissa maline,puri "not " "poor" substring ne "good"thi replace kare 6e.
+
     if not_index != -1 and poor_index != -1 and not_index < poor_index:
         main_str = main_str[:not_index] + "good" + main_str[poor_index + 4:]
 

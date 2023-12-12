@@ -390,22 +390,26 @@ print("      <==================================================================
 # Q-21 =>  Write a Python function to reverses a string if its length is a multiple of 4.
 
 print(" Q-21 =>   Write a Python function to reverses a string if its length is a multiple of 4 : => :")
+def reverse_string(s):
+    return s[::-1] if len(s) % 4 == 0 else s
+
+user_str = "abcd"
+reversed_str = reverse_string(user_str)
+print("Reversed string:", reversed_str)
 
 print("      <====================================================================>")
 
+
+
 # The above code defines a function called `reverse_string_multiply_of_4` that takes an input string as a parameter. It checks if the length of the input string is divisible by 4. If it is, it returns the reverse of the input string using slicing. If it is not divisible by 4, it returns the input string as is.
 
-# The above code defines a function called `reverse_string_multiply_of_4` that takes an input string as a parameter. It checks if the length of the input string is divisible by 4. If it is, it returns the reverse of the input string using slicing. If it is not divisible by 4, it returns the input string as is.
+def reverse_string(s):
+    return s[::-1] if len(s) % 4 == 0 else s
 
+user_str = "abcd"
+reversed_str = reverse_string(user_str)
+print("Reversed string:", reversed_str)
 
-def reverse_string_multiply_of_4(input_string):
-    if len(input_string) % 4 == 0:
-        return input_string[:: -1]
-    else:
-        return input_string
-
-string_to_reverse= input("Enter A String : => : ")
-print("Result : => : ", reverse_string_multiply_of_4(string_to_reverse) )
 
 print("      <====================================================================>")
 

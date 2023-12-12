@@ -10,4 +10,6 @@ print(lists)
 list2 = [2,33,222,14,25]
 
 list2.pop(-2)
+
+# the output will be 2,33,222,25 & the number which will be popout will be 44!
 print(list2)

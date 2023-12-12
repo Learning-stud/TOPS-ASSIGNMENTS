@@ -390,8 +390,14 @@ print("      <==================================================================
 # Q-21 =>  Write a Python function to reverses a string if its length is a multiple of 4.
 
 print(" Q-21 =>   Write a Python function to reverses a string if its length is a multiple of 4 : => :")
+# The above code defines a function called `reverse_string` that takes a string `s` as input.
+
+
 def reverse_string(s):
     return s[::-1] if len(s) % 4 == 0 else s
+
+
+# The above code is reversing a given string. It takes a string "abcd" as input, calls a function `reverse_string()` to reverse the string, and then prints the reversed string.
 
 user_str = "abcd"
 reversed_str = reverse_string(user_str)
@@ -421,7 +427,6 @@ print(" Q-22 : => :  Write a Python program to get a string made of the first 2 
 
 print("      <====================================================================>")
 
-# The above code prompts the user to enter a string. If the length of the string is less than 2, it assigns the value "String is Empty" to the variable `string_result`. Otherwise, it takes the first two characters of the string (`strings[:2]`) and concatenates them with the last two characters of the string (`strings[-2:]`). The resulting string is then assigned to the variable `string_result`. Finally, it prints the value of `string_result`.
 
 # The above code prompts the user to enter a string. If the length of the string is less than 2, it assigns the value "String is Empty" to the variable `string_result`. Otherwise, it takes the first two characters of the string (`strings[:2]`) and concatenates them with the last two characters of the string (`strings[-2:]`). The resulting string is then assigned to the variable `string_result`. Finally, it prints the value of `string_result`.
 
@@ -446,7 +451,9 @@ print("      <==================================================================
 # The above code defines a function called `string_in_middle` that takes two parameters: `main_string` and `inserted_string`.
 
 def string_in_middle(main_string,inserted_string):
+    # main_string ni middle index nikali lese
     middle_index = len(main_string) // 2
+    # inserted_string ne main_string ni middle ma insert karse
     return main_string[:middle_index] + inserted_string + main_string[middle_index]
 
 

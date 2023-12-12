@@ -6,3 +6,8 @@ lists = ["jay ","abhishek" ,"devanshu","nehru","ganddhi"]
 
 lists.pop(4)
 print(lists)
+
+list2 = [2,33,222,14,25]
+
+list2.pop(-2)
+print(list2)

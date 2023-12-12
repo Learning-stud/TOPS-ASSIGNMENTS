@@ -373,11 +373,15 @@ print("      <==================================================================
 
 # The above code defines a function called `long_word_length` that takes a list of words as input. It then uses a generator expression to find the length of each word in the list and returns the maximum length.
 
-def long_word_length(word_list):
+# The above code defines a function called `longest_word_length` that takes a list of words as input. It uses a generator expression to iterate over each word in the list and calculates the length of each word. The `max` function is then used to find the maximum length among all the words in the list. The function returns this maximum length.
+
+def longest_word_length(word_list):
     return max(len(word) for word in word_list)
 
-word = input("Enter a List of Word : => : ").split(',')
-print("Length Of The Longest Word: => : ",long_word_length(word))
+# The above code is defining a list of words called "words_list" and then printing the length of the longest word in that list.
+
+words_list = ["apple", "banana", "cherry", "date"]
+print("Length of the longest word:", longest_word_length(words_list))
 
 
 print("      <====================================================================>")

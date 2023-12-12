@@ -262,7 +262,7 @@ print(f"The substring '{sub_str}' appears {occurrences} times in the main string
 
 print("      <====================================================================>")
 
-print(f"Substring {sub_string} occurs {count} times In The Main String")
+
 
 
 # Q-16 => Write a Python program to count the occurrences of each word in a given sentence
@@ -276,16 +276,17 @@ print("Q-16 => Write a Python program to count the occurrences of each word in a
 
 print("      <====================================================================>")
 
-# The above code is taking a sentence as input from the user and then splitting the sentence into individual words. It then creates a dictionary called "word_frequency" to store the frequency of each word in the sentence. The code iterates through each word in the sentence and updates the frequency count in the dictionary. Finally, it prints the word frequency dictionary.
 
-sentence = input("Enter Sentence")
-words = sentence.split()
 
-word_frequency = {}
+# The above code is counting the frequency of each word in a given sentence. It splits the sentence into individual words, creates a dictionary called `word_count`, and then iterates through each word. For each word, it checks if it already exists in the `word_count` dictionary. If it does, it increments the count by 1. If it doesn't, it adds the word to the dictionary with a count of 1. Finally, it prints the word frequency dictionary.
+
+user_sentence = "How are You , How Is your Day going ?"
+words = user_sentence.split()
+word_count = {}
 for word in words:
-    word_frequency[word]= word_frequency.get(word,0) + 1
+    word_count[word] = word_count.get(word, 0) + 1
+print("Word frequency:", word_count)
 
-print("Word Frequency",word_frequency)
 
 print("      <====================================================================>")
 
@@ -298,12 +299,11 @@ print("      <==================================================================
 
 # The above code takes two strings as input from the user and then creates a new string by combining parts of the two input strings. It takes the first two characters from the second string and combines it with the remaining characters from the first string. It also takes the first two characters from the first string and combines it with the remaining characters from the second string. The new string is then printed as the result.
 
-str1 = input( " Enter The First String : => :  ")
-str2 = input( " Enter The Second String : => :  ")
+str1 = "hello"
+str2 = "world"
+new_str = str2[:2] + str1[2:] + " " + str1[:2] + str2[2:]
+print("Combined string with swapped characters:", new_str)
 
-new_string = str2[:2] + str1[2:] + " " + str1[:2] + str2[2:]
-
-print(" Result: => : ",new_string)
 
 print("      <====================================================================>")
 
@@ -315,16 +315,17 @@ print ("Q-18 =>  Write a Python program to add 'ing' at the end of a given strin
 print("      <====================================================================>")
 # The above code takes a string as input from the user and checks if the length of the string is greater than or equal to 3. If it is, it checks if the last three characters of the string are 'ing'. If they are, it appends 'ly' to the string. If they are not, it appends 'ing' to the string. Finally, it prints the resulting string.
 
-given_string = input("Enter a String")
-
-if len(given_string) >= 3:
-    if given_string[-3]  == 'ing':
-        given_string += 'ly'
-
+def ing_to_string(s):
+    if len(s) >= 3:
+        return s + "ing"
     else:
-        given_string += 'ing'
+        return s
 
-print("Result: => : ",given_string)
+user_str = "play"
+modified_str = ing_to_string(user_str)
+print("Modified string:", modified_str)
+
+
 
 
 print("      <====================================================================>")
@@ -339,17 +340,21 @@ print("      <==================================================================
 
 # The above code takes a string as input from the user. It then checks if the string contains the word 'not' followed by the word 'poor'. If this condition is met, it replaces the substring 'not' to 'good' and removes the substring 'poor' from the original string. Finally, it prints the modified string or the original string if the condition is not met.
 
-input_string = input("Enter a String; => : ")
+# Function definition: 'replace_substring' naam ka ek function define kiya gaya hai
+def replace_substring(main_str):   # defining a function
+    not_index = main_str.find("not")
+    poor_index = main_str.find("poor")
 
-not_index=input_string.find('not')
-poor_index=input_string.find('poor')
+    if not_index != -1 and poor_index != -1 and not_index < poor_index:
+        main_str = main_str[:not_index] + "good" + main_str[poor_index + 4:]
 
-if not_index != -1 and poor_index != -1 and not_index < poor_index:
-    result_string = input_string[:not_index] + ' good' + input_string[poor_index + 4]
-else:
-    result_string= input_string
 
-print("Result : => : ",result_string)
+user_str = "The weather is not that poor today."
+
+result_str = replace_substring(user_str)
+
+print("Resulting string:", result_str)
+
 
 
 print("      <====================================================================>")

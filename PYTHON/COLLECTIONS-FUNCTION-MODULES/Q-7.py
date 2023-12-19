@@ -1,6 +1,6 @@
 # Write a python program to remove duplicate from list
 
-
+# remove _duplcate Function converts the list to set and then back to list
 def remove_duplicates(list_input):
  return list(set(list_input))
 

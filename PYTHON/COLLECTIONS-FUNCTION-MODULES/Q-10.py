@@ -3,4 +3,4 @@ print("The First Elemnts")
 print(square[:5]) # [:5]   is used to print the values from positive index
 
 print("The last Elements ")
-print(square[:-5])  # [:-5 is used to print the values from negative index  {: this sign is used to reversed  }]
+print(square[-5:])  # [:-5 is used to print the values from negative index  {: this sign is used to reversed  }]

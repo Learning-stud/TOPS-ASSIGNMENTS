@@ -1,7 +1,7 @@
 def count_strings(strings):
  count= 0
  for counts in strings:
-  if len(counts) >= 2 and counts[0]==counts[-1]:
+  if len(counts) >= 2 and counts[0]== counts [-1]:
      counts += 1
   return count
 

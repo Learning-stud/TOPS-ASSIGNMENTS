@@ -1,13 +1,13 @@
 # write a function to find smallest ,largest and sum of all from the list
 # The code `num = []` initializes an empty list called `num`.
-num = []
-add = 0
-for i in range(5):
+num = []  # initializing
+add = 0  # assigning  default value
+for i in range(5):  # defining the range
  # The code `num_to_take = int(input("Enter the Number: => :"))` is taking user input and converting
  # it to an integer. It prompts the user to enter a number and assigns that number to the variable
 # `num_to_take`.
  num_to_take = int(input("Enter the Number: => :"))
- num.append(num_to_take)
+ num.append(num_to_take)   # adding the element
 
 # The code `num.sort()` is sorting the list `num` in ascending order.
 

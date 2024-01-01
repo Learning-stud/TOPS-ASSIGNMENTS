@@ -10,8 +10,10 @@ def key_exists(dictionary,key_to_check):
 # key to check
 key_to_check = 'c'
 
+# if the key exists
 if(key_exists,my_dict):
  print(f"The Key '{key_to_check}', Exists In The Dictionary .Its Value Is : {my_dict[key_to_check]}")
+#if not exist
 else:
  print(f"The Key '{key_to_check}' Does Not Exists In The Dictionary")
 

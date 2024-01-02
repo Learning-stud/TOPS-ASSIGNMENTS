@@ -1,0 +1,8 @@
+Write a Python program to convert a list of tuples into a dictionary.
+How will you create a dictionary using tuples in Python?
+the upper two question  i dont do it into line wise so i will do these two question at end.
+
+
+formula for degree to radian
+
+1deg x pi/180 = 0.01745rad

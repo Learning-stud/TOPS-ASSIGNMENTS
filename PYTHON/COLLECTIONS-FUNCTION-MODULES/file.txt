@@ -1,0 +1,2 @@
+Write a Python program to convert a list of tuples into a dictionary.
+How will you create a dictionary using tuples in Python?

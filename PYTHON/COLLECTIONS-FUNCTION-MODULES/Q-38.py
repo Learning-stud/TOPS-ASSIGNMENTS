@@ -1,5 +1,6 @@
 # combine two dictionary adding values for common keys
 from collections import Counter
+# counter is used to count each elements occurence simultaniously
 
 d1 = {'a':'100','b':'200','c':'300'}
 d2 ={'a':'300','d':'200','e':'400'}

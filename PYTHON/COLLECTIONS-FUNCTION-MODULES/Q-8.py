@@ -1,7 +1,7 @@
 # Write a python program to check a list is empty or not
 
 def list_empty(input_list):
- return not bool(input_list)
+ return not bool(input_list)    # for getting boolean value true or false 
 
 
 empty_list=[]

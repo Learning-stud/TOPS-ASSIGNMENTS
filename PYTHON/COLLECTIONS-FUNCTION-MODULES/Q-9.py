@@ -7,4 +7,4 @@ def common_member(list1,list2):
 
 list_a=[1,2,3,4]
 list_b=[3,4,5,6]
-print("List have Commo Menbers? ",common_member(list_a,list_b))
+print("List have Common Menbers? ",common_member(list_a,list_b))
